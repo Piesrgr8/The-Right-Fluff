@@ -104,6 +104,10 @@
     margin-bottom: 30px;
 }
 
+.wrap hr {
+    
+}
+
 .wrap #events {
     display: grid;
     grid-template-columns: auto auto;
@@ -118,12 +122,13 @@
 
 .wrap #flavors, .wrap #events{
     list-style: none;
+    padding-left: 0;
 }
 
 .wrap #events li {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 
 .wrap #events li p{

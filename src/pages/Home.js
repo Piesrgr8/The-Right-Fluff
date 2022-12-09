@@ -47,13 +47,13 @@ export default function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className="wrap">
+            <div className="wrap" aria-label="Main Page"  aria-required="true">
                 {/* <InfoCard /> */}
                 <h1>Put a Fresh Spin on your Next Event</h1>
                 <p>Make your next event a little sweeter with fresh live spinning and flavorful treats for your guests.</p>
                 <ul id='events'>
                     {list2.map((m) =>
-                    <li style={{'backgroundImage': 'url(' + m.banner + ')'}}><p>{m.name}</p></li>
+                    <li key={m.id} style={{'backgroundImage': 'url(' + m.banner + ')'}}><p>{m.name}</p></li>
                     )}
                 </ul>
                 <p>Inside or outdoors, day or night, rain or shine, we provide a fun and memorable highlight to any event. Our cotton candy is spun fresh from pure cane sugar. Certified Organic, Gluten-free, Kosher, Vegan, and free of arfticial colors.</p>
@@ -62,7 +62,7 @@ export default function Home(props) {
                 <p>We take those sweet memories of days at the county fair to a new level with gourmet flavors your guests will love. Our favorites include:</p>
                 <ul id='flavors'>
                     {list1.map((m) =>
-                    <li style={{'backgroundColor': m.basecolor}}><p style={{'color': m.id !== 5 ? 'black' : 'white'}}>{m.name}</p></li>
+                    <li key={m.id} style={{'backgroundColor': m.basecolor}}><p style={{'color': m.id !== 5 ? 'black' : 'white'}}>{m.name}</p></li>
                     )}
                 </ul>
                 <p>Interested in a flavor that's not on this list?</p>

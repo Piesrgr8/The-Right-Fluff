@@ -9,7 +9,7 @@ export default function About(props) {
         <br/>
         <section className='pic-left'>
             <div className='img'>
-                <img src={imgs[7]} alt=''/>
+                <img src={imgs[5]} alt='Dana preparing cotton candy.'/>
             </div>
             <div className='text'>
                 <p>The Right Fluff is family-owned, a true small business dedicated to bringing smiles to faces of all ages. After all, few treats are as ageless and timeless as cotton candy. And we couldn’t think of a more fun way to spread a little joy to our community while teaching our own kids about business.</p>

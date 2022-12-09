@@ -13,7 +13,7 @@ export default function FormSchedule(props) {
     // const list = props.flavors;
     const list2 = props.events;
 
-    const sent = false;
+    var sent = false;
 
     // const [checked, setChecked] = useState([])
 
@@ -64,7 +64,7 @@ export default function FormSchedule(props) {
 
     return (
         <div className="formdata">
-            {sent ? <p id='sent'>Sent! We will review this data and get to you shortly!</p> : <p></p>}
+            {sent ? <p id='sent'>Sent! We will review this data and get to you shortly!</p> :
             <form ref={form} onSubmit={sendEmail}>
                 <p>Contact Information</p>
                 <section>
@@ -137,7 +137,7 @@ export default function FormSchedule(props) {
                         value="Indoor"
                         onChange={changeHandler}
                     />
-                    <label for="in">Indoor</label>
+                    <label htmlFor="in">Indoor</label>
 
                     <input
                         type="radio"
@@ -146,13 +146,13 @@ export default function FormSchedule(props) {
                         value="Outdoor"
                         onChange={changeHandler}
                     />
-                    <label for="out">Outdoor</label>
+                    <label htmlFor="out">Outdoor</label>
                 </section>
                 <section>
                     <select name='eventTyp'>
-                        <option value="not" selected>Choose an option...</option>
+                        <option value="not">Choose an option...</option>
                         {list2.map((m) => 
-                        <option value={m.shortname}>{m.name}</option>
+                        <option key={m.id} value={m.shortname}>{m.name}</option>
                         )}
                     </select>
                 </section>
@@ -178,7 +178,7 @@ export default function FormSchedule(props) {
                 <button type="submit" name="done">
                     Schedule
                 </button>
-            </form>
+            </form>}
         </div>
     )
 }
