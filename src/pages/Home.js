@@ -53,7 +53,11 @@ export default function Home(props) {
                 <p>Make your next event a little sweeter with fresh live spinning and flavorful treats for your guests.</p>
                 <ul id='events'>
                     {list2.map((m) =>
-                    <li key={m.id} style={{'backgroundImage': 'url(' + m.banner + ')'}}><p>{m.name}</p></li>
+                        m.banner ? 
+                            <li key={m.id} style={{'backgroundImage': 'url(' + m.banner + ')'}}><p>{m.name}</p></li>
+                            :
+                            <li style={{'display': 'none'}}><p>none</p></li>
+                        
                     )}
                 </ul>
                 <p>Inside or outdoors, day or night, rain or shine, we provide a fun and memorable highlight to any event. Our cotton candy is spun fresh from pure cane sugar. Certified Organic, Gluten-free, Kosher, Vegan, and free of arfticial colors.</p>

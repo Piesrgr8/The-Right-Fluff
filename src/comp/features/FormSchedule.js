@@ -13,9 +13,7 @@ export default function FormSchedule(props) {
     // const list = props.flavors;
     const list2 = props.events;
 
-    var sent = false;
-
-    // const [checked, setChecked] = useState([])
+    const [sent, setSent] = useState(false)
 
     const [send, setSend] = useState({
         first_name: '',
@@ -35,14 +33,13 @@ export default function FormSchedule(props) {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
         emailjs.sendForm(service_id, template_id, form.current, public_key)
           .then((result) => {
               console.log(result.text);
-              sent = true;
+              setSent(true);
           }, (error) => {
               console.log(error.text);
-              sent = false;
+              setSent(false);
           });
       };
 
@@ -104,6 +101,7 @@ export default function FormSchedule(props) {
                 <section>
                     <input
                         type="date"
+                        id='date'
                         placeholder="01/01/2023"
                         name="date"
                         value={send.date}
@@ -114,6 +112,7 @@ export default function FormSchedule(props) {
                     <p>From:</p>
                     <input
                         type="time"
+                        id='time'
                         placeholder="12:00 PM"
                         name="time"
                         value={send.fromTime}
@@ -122,6 +121,7 @@ export default function FormSchedule(props) {
                     <p>To:</p>
                     <input
                         type="time"
+                        id='time'
                         placeholder="12:00 PM"
                         name="time"
                         value={send.toTime}
@@ -149,7 +149,7 @@ export default function FormSchedule(props) {
                     <label htmlFor="out">Outdoor</label>
                 </section>
                 <section>
-                    <select name='eventTyp'>
+                    <select name='eventTyp' id='event'>
                         <option value="not">Choose an option...</option>
                         {list2.map((m) => 
                         <option key={m.id} value={m.shortname}>{m.name}</option>

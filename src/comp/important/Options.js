@@ -54,28 +54,28 @@ const flavors = [
     },
     {
         id: 9,
-        name: 'Cappucino',
+        name: 'Cappuccino',
         desc: 'A sweet taste with a bit of acid. They are not overly sweet fruits, and unripe blueberries will taste sour. They are small but juicy and will release juice when you bite down. Wild blueberries are smaller than cultivated ones and often have a more floral taste.',
         basecolor: '#b39f7a'
     },
     {
         id: 10,
-        name: 'Maple',
-        desc: 'A sweet taste with a bit of acid. They are not overly sweet fruits, and unripe blueberries will taste sour. They are small but juicy and will release juice when you bite down. Wild blueberries are smaller than cultivated ones and often have a more floral taste.',
-        basecolor: '#bb9351'
-    },
-    {
-        id: 11,
         name: 'Banana',
         desc: 'A sweet taste with a bit of acid. They are not overly sweet fruits, and unripe blueberries will taste sour. They are small but juicy and will release juice when you bite down. Wild blueberries are smaller than cultivated ones and often have a more floral taste.',
         basecolor: '#ffe135'
     },
     {
-        id: 12,
+        id: 11,
         name: 'Pumpkin Spice',
         desc: 'A sweet taste with a bit of acid. They are not overly sweet fruits, and unripe blueberries will taste sour. They are small but juicy and will release juice when you bite down. Wild blueberries are smaller than cultivated ones and often have a more floral taste.',
         basecolor: '#e0b094'
-    }
+    },
+    // {
+    //     id: 10,
+    //     name: 'Maple',
+    //     desc: 'A sweet taste with a bit of acid. They are not overly sweet fruits, and unripe blueberries will taste sour. They are small but juicy and will release juice when you bite down. Wild blueberries are smaller than cultivated ones and often have a more floral taste.',
+    //     basecolor: '#bb9351'
+    // }
 ];
 
 const partyType = [
@@ -102,6 +102,18 @@ const partyType = [
         name: 'Corporate Event',
         shortname: 'corporate',
         banner: img2,
+    },
+    {
+        id: 5,
+        name: 'Graduation',
+        shortname: 'graduation',
+        banner: '',
+    },
+    {
+        id: 6,
+        name: 'Fund Raiser',
+        shortname: 'fundraiser',
+        banner: '',
     }
 ]
 
