@@ -1,7 +1,7 @@
 import '../assets/css/Pages.css'
 import React from 'react'
 import {flavors, partyType} from '../comp/important/Options'
-import logo from '../assets/img/icon.svg'
+import logo from '../assets/img/logo.png'
 import { Link } from 'react-router-dom';
 
 const list1 = flavors;

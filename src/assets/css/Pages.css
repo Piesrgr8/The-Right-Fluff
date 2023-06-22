@@ -37,7 +37,6 @@
     animation: scroll 40s linear infinite;
     overflow: hidden;
     border: 5px solid skyblue;
-    filter: blur(2px);
 }
 
 @keyframes load {
