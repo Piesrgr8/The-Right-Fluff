@@ -17,14 +17,14 @@ import img7 from './assets/img/IMG-4220.JPG'
 import img8 from './assets/img/IMG-4222.JPG'
 
 function App() {
-    const imgs = [img1, img2, img3, img4, img5, img6, img7, img8];
+    const imgs = [img1, img2, img3, img4, img5, img6, img7, img8]
     return (
         <BrowserRouter>
             <div className="App">
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home images={imgs}/>} />
-                    <Route path="/about" element={<About images={imgs}/>} />
+                    <Route path="/" element={<Home images={imgs} />} />
+                    <Route path="/about" element={<About images={imgs} />} />
                     {/* <Route path="/shop" element={<Shop />} /> */}
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

@@ -11,14 +11,14 @@ export default function Shop() {
                     home!
                 </p>
             </div>
-            <div className='flavors'>
-                {Flavors.map((m) =>
-                <div className='indflav' key={m.id}>
-                    <img src={m.img} alt=''/>
-                    <h3>{m.name}</h3>
-                    <p>{m.desc}</p>
-                </div>
-                )}
+            <div className="flavors">
+                {Flavors.map((m) => (
+                    <div className="indflav" key={m.id}>
+                        <img src={m.img} alt="" />
+                        <h3>{m.name}</h3>
+                        <p>{m.desc}</p>
+                    </div>
+                ))}
             </div>
         </div>
     )

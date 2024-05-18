@@ -26,7 +26,9 @@ form section {
     align-items: center;
 }
 
-form section #date, form section #time, form section #event{
+form section #date,
+form section #time,
+form section #event {
     appearance: none;
 }
 

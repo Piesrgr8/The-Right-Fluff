@@ -5,10 +5,10 @@ import App from './App'
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-T95TJRG'
+    gtmId: 'GTM-T95TJRG',
 }
 
-TagManager.initialize(tagManagerArgs);
+TagManager.initialize(tagManagerArgs)
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
